@@ -1,14 +1,14 @@
 {-# LANGUAGE NoMonomorphismRestriction #-}
 
-module Lib
-    ( someFunc
+module SimpleParser 
+    ( runParse 
     ) where
 
 import Text.ParserCombinators.Parsec
 import System.Environment
 
-someFunc :: IO ()
-someFunc = do args <- getArgs
+runParse :: IO ()
+runParse = do args <- getArgs
               putStrLn (readExpr (args !! 0))
 
 yamlFile :: Parser [(String, Maybe String)]
