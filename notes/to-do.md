@@ -1,5 +1,5 @@
 TODO
-- Fix structire; remove old files, fix name for parser
+- Fix structure; remove old files, fix name for parser
 - Add scotty
 - Hook up scotty with parser
     - Accepts request
