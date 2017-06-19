@@ -1,7 +1,8 @@
 {-# LANGUAGE NoMonomorphismRestriction #-}
 
 module SimpleParser 
-    ( runParse 
+    ( runParse,
+      readExpr
     ) where
 
 import Text.ParserCombinators.Parsec
